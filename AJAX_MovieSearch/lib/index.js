@@ -21,8 +21,7 @@ form.addEventListener('submit', (event) => {
   fetch(url) // Make the HTTP request
     .then(response => response.json()) // Wait for the response and parse it as JSON
     .then((data) => {
-      // Wait for parsing, allowing us to manipulate the data
-      // console.log(data.Search[0].Title);
+      // iterating through the array to get every movie title 1 by 1
       for (let index = 0; index < data.Search.length; index += 1) {
         console.log(data.Search[index].Title);
         const html = `<div class="col-lg-3 col-md-4 col-sm-6 col-12">
