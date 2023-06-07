@@ -14,8 +14,6 @@ const locationMap = (longitude, latitude) => {
     .setLngLat([longitude, latitude])
     .addTo(map);
 };
-
-
 const geoMap = () => {
    // Get the input address element
   const inputAddress = document.querySelector('.form-control');
